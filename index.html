@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miranda's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .gallery-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-blue-700 to-blue-500 text-white p-4 fixed w-full top-0 z-10 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Miranda's Portfolio</h1>
+            <div class="space-x-6">
+                <a href="#about" class="hover:text-yellow-300 transition duration-300">About</a>
+                <a href="#education" class="hover:text-yellow-300 transition duration-300">Education</a>
+                <a href="#skills" class="hover:text-yellow-300 transition duration-300">Skills</a>
+                <a href="#experience" class="hover:text-yellow-300 transition duration-300">Experience</a>
+                <a href="#projects" class="hover:text-yellow-300 transition duration-300">Projects</a>
+                <a href="#gallery" class="hover:text-yellow-300 transition duration-300">Gallery</a>
+                <a href="#contact" class="hover:text-yellow-300 transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-600 to-indigo-700 text-white pt-20">
+        <div class="container mx-auto text-center">
+            <img src="miranda.jpg" alt="Miranda's Photo" class="w-48 h-48 rounded-full mx-auto mb-6 object-cover border-4 border-white shadow-lg">
+            <h2 class="text-5xl font-bold mb-4">Miranda</h2>
+            <p class="text-xl mb-2">Sambas, Kalimantan Barat | 089509131976 | mrndaaa10@gmail.com</p>
+            <p class="text-xl mb-6">Mahasiswa Semester 4 Program Studi Manajemen Informatika di Politeknik Negeri Sambas</p>
+            <p class="text-lg mb-6">Hallo, Saya adalah seorang mahasiswa dengan minat besar dalam teknologi informasi, khususnya pengelolaan data dan pengembangan aplikasi berbasis web. Saya teliti, cepat belajar, serta mampu beradaptasi dan bekerja sama dalam tim. Saya siap berkontribusi secara profesional melalui program magang untuk mengembangkan pengalaman dan wawasan industri.</p>
+            <a href="#contact" class="bg-yellow-400 text-blue-800 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition duration-300 shadow-md">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Education</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="experience-card bg-gray-100 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold text-blue-700">D3 Manajemen Informatika</h3>
+                    <p class="text-gray-600">Politeknik Negeri Sambas | 2023 - Sekarang</p>
+                    <p class="mt-2 text-gray-700">IPK: 3.81/4.00</p>
+                </div>
+                <div class="experience-card bg-gray-100 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold text-blue-700">Otomatisasi dan Tata Kelola Perkantoran</h3>
+                    <p class="text-gray-600">SMKN 1 Teluk Keramat | 2021 - 2023</p>
+                    <p class="mt-2 text-gray-600">Sertifikat Uji Kompetensi Keahlian Bidang Perkantoran - Badan Nasional Sertifikasi Profesi (BNSP).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-700">Hard Skills</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>HTML, CSS, PHP, MySQL</li>
+                        <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+                        <li>System Documentation (Use Case, Flowchart, DFD)</li>
+                        <li>CodeIgniter (MVC Framework)</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-700">Soft Skills</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Public Speaking</li>
+                        <li>Problem Solving & Critical Thinking</li>
+                        <li>Kolaborasi Tim & Koordinasi Proyek</li>
+                        <li>Multitasking & Adaptability</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Organizational Experience</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="experience-card bg-gray-100 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold text-blue-700">Divisi Manajemen Informatika Bidang PSDM (Pengembangan Sumber Daya Mahasiswa)</h3>
+                    <p class="text-gray-600">Himpunan Mahasiswa Jurusan Manajemen Informatika (HMJMI), Politeknik Negeri Sambas | 2023 - Sekarang</p>
+                    <ul class="list-disc list-inside mt-2 text-gray-700">
+                        <li>Mengelola dan melaksanakan program pelatihan untuk mahasiswa baru</li>
+                        <li>Menyusun proposal kegiatan dan laporan dokumentasi organisasi</li>
+                        <li>Meningkatkan keterampilan komunikasi, dokumentasi, serta kerja tim lintas divisi — pengalaman ini mendukung kemampuan koordinasi proyek kecil dalam konteks IT</li>
+                        <li>Hasilnya : Membangun dasar keterampilan manajemen kegiatan, dokumentasi sistematis, dan kolaborasi teknis, yang selaras dengan peran magang di bidang teknologi informasi.</li>
+                    </ul>
+                </div>
+                <div class="experience-card bg-gray-100 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold text-blue-700">Bidang Kaderisasi</h3>
+                    <p class="text-gray-600">Forum Komunikasi Mahasiswa Bidikmisi (FKMB), Politeknik Negeri Sambas | 2023 - Sekarang</p>
+                    <ul class="list-disc list-inside mt-2 text-gray-700">
+                        <li>Ketua Panitia Milad FKMB 2025, mengkoordinasi 70+ panitia, menyusun konsep acara, dan mengatur pelaksanaan</li>
+                        <li>Bertugas sebagai Co-Acara dalam lebih dari 5 kegiatan besar organisasi</li>
+                        <li>Menjadi moderator workshop dan MC pembukaan acara formal</li>
+                        <li>Mengarahkan lebih dari 300 peserta dalam kegiatan indoor dan outdoor</li>
+                        <li>Hasilnya : Kesuksesan acara dengan tingkat partisipasi tinggi dan pengelolaan acara yang profesional</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Magang Section -->
+    <section id="experience" class="py-10 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Magang Experience</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10"></div>
+                <div class="experience-card bg-gray-100 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold text-blue-700">Bidang Umum dan Kepegawaian</h3>
+                    <p class="text-gray-600">Dinas Pendidikan dan Kebudayaan Kabupaten Sambas | Juli - Agustus 2022</p>
+                    <ul class="list-disc list-inside mt-2 text-gray-700">
+                        <li>Menyusun dan mengelola dokumen administrasi menggunakan Microsoft Excel dan Word, termasuk rekap data dan surat menyurat</li>
+                        <li>Bertanggung jawab dalam input data surat serta mengoordinir alur surat masuk dan keluar agar tercatat dan terdistribusi secara sistematis.</li>
+                        <li>Mengidentifikasi kebutuhan penyederhanaan proses dokumentasi sebagai dasar usulan otomatisasi sistem</li>
+                        <li>Hasil: Melatih kemampuan manajemen data, dokumentasi sistem, dan pemahaman alur kerja administrasi kepegawaian — penting bagi analisis sistem dan pengembangan solusi digital kepegawaian</li>
+                    </ul>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="project-card bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold text-blue-700">Website E-Commerce</h3>
+                    <p class="text-gray-600">HTML | April 2024</p>
+                    <img src="makeup.png" alt="Website E-Commerce" class="w-full h-48 object-cover rounded-lg mt-4 mb-2">
+                    <img src="makeup2.png" alt="Website E-Commerce" class="w-full h-48 object-cover rounded-lg mt-4 mb-2">
+                    <p class="mt-2 text-gray-700">Membangun website toko online sederhana dengan halaman produk, detail, dan kontak. Menggunakan HTML untuk menyusun struktur konten statis.</p>
+                </div>
+                <div class="project-card bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold text-blue-700">Website Wisata Air di Kabupaten Sambas</h3>
+                    <p class="text-gray-600">HTML, CSS | Mei 2024</p>
+                    <img src="wisata.png" alt="Website Wisata Air" class="w-full h-48 object-cover rounded-lg mt-4 mb-2">
+                    <img src="wisata2.png" alt="Website Wisata Air" class="w-full h-48 object-cover rounded-lg mt-4 mb-2">
+                    <p class="mt-2 text-gray-700">Merancang website promosi tempat wisata lokal dengan galeri, lokasi, dan deskripsi. HTML digunakan untuk struktur halaman, CSS untuk styling visual.</p>
+                </div>
+                <div class="project-card bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold text-blue-700">Aplikasi Penginputan Data Kepegawaian KPU</h3>
+                    <p class="text-gray-600">HTML,CSS,MySQL | Desember 2024</p>
+                    <img src="kpu.jpg" alt="Aplikasi Penginputan Data Kepegawaian KPU" class="w-full h-48 object-cover rounded-lg mt-4 mb-2">
+                    <img src="kpu2.jpg" alt="Aplikasi Penginputan Data Kepegawaian KPU" class="w-full h-48 object-cover rounded-lg mt-4 mb-2">
+                    <p class="mt-2 text-gray-700">Membangun aplikasi web sederhana untuk menginput, menyimpan, dan memperbarui data pegawai di lingkungan KPU. Aplikasi dilengkapi fitur pencarian data, kategori unit kerja, serta form input yang disesuaikan dengan format kepegawaian instansi.</p>
+                </div>
+                <div class="project-card bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold text-blue-700">Manajemen Inventaris Barang – Web App</h3>
+                    <p class="text-gray-600">MySQL | November 2024</p>
+                    <img src="inventaris.png" alt="Manajemen Inventaris" class="w-full h-48 object-cover rounded-lg mt-4 mb-2">
+                    <img src="inventaris2.png" alt="Manajemen Inventaris" class="w-full h-48 object-cover rounded-lg mt-4 mb-2">
+                    <p class="mt-2 text-gray-700">Mengelola proyek pencatatan barang masuk dan keluar, lengkap dengan fitur stok dan riwayat transaksi.</p>
+                </div>
+                <div class="project-card bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold text-blue-700">Aplikasi Agenda Surat Di Dinas Pendidikan Kab. Sambas</h3>
+                    <p class="text-gray-600">PHP Native, Bootstrap | Juni 2025</p>
+                    <img src="agenda.png" alt="Aplikasi Agenda Surat" class="w-full h-48 object-cover rounded-lg mt-4 mb-2">
+                    <img src="agenda2.png" alt="Aplikasi Agenda Surat" class="w-full h-48 object-cover rounded-lg mt-4 mb-2">
+                    <p class="mt-2 text-gray-700">Mengembangkan sistem pencatatan surat dengan fitur input, pencarian, dan laporan. Bootstrap digunakan untuk antarmuka responsif, dan PHP sebagai backend.</p>
+                </div>
+                <div class="project-card bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+                    <h3 class="text-xl font-semibold text-blue-700">Aplikasi Pengajuan Cuti Pegawai</h3>
+                    <p class="text-gray-600">CodeIgniter 3, Bootstrap | Juli 2025</p>
+                    <img src="cuti2.png" alt="Aplikasi Cuti Pegawai" class="w-full h-48 object-cover rounded-lg mt-4 mb-2">
+                    <img src="cuti.png" alt="Aplikasi Cuti Pegawai" class="w-full h-48 object-cover rounded-lg mt-4 mb-2">
+                    <p class="mt-2 text-gray-700">Membangun aplikasi cuti pegawai dengan login multiuser, pengajuan cuti, dan approval. Menggunakan framework CodeIgniter 3 untuk arsitektur MVC dan Bootstrap untuk tampilan antarmuka.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Gallery</h2>
+            <h3 class="text-2xl font-weight: normal text-left mb-12 text-gray-600">Berikut adalah dokumentasi beberapa kegiatan organisasi yang saya ikuti di luar jam kuliah sebagai bentuk kontribusi aktif di lingkungan kampus.</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="gallery-card bg-gray-100 p-4 rounded-xl shadow-md overflow-hidden fade-in">
+                    <img src="study_tour.jpg" alt="Activity 1" class="w-full h-48 object-cover rounded-lg transition duration-300">
+                    <p class="text-center mt-2 text-gray-700 font-medium">Pengarah Massa Indoor</p>
+                </div>
+                <div class="gallery-card bg-gray-100 p-4 rounded-xl shadow-md overflow-hidden fade-in" style="animation-delay: 0.1s">
+                    <img src="ketupat.jpg" alt="Activity 2" class="w-full h-48 object-cover rounded-lg transition duration-300">
+                    <p class="text-center mt-2 text-gray-700 font-medium">Milad FKMB 2025</p>
+                </div>
+                <div class="gallery-card bg-gray-100 p-4 rounded-xl shadow-md overflow-hidden fade-in" style="animation-delay: 0.2s">
+                    <img src="workshop.jpg" alt="Activity 3" class="w-full h-48 object-cover rounded-lg transition duration-300">
+                    <p class="text-center mt-2 text-gray-700 font-medium">Moderator Training FKMB Generation</p>
+                </div>
+                <div class="gallery-card bg-gray-100 p-4 rounded-xl shadow-md overflow-hidden fade-in" style="animation-delay: 0.3s">
+                    <img src="outdoor.png" alt="Activity 4" class="w-full h-48 object-cover rounded-lg transition duration-300">
+                    <p class="text-center mt-2 text-gray-700 font-medium">Kegiatan Outdor FKMB</p>
+                </div>
+                <div class="gallery-card bg-gray-100 p-4 rounded-xl shadow-md overflow-hidden fade-in" style="animation-delay: 0.4s">
+                    <img src="mc.jpg" alt="Activity 5" class="w-full h-48 object-cover rounded-lg transition duration-300">
+                    <p class="text-center mt-2 text-gray-700 font-medium">Master Of Ceremony Formal</p>
+                </div>
+                <div class="gallery-card bg-gray-100 p-4 rounded-xl shadow-md overflow-hidden fade-in" style="animation-delay: 0.5s">
+                    <img src="moderator.jpg" alt="Activity 6" class="w-full h-48 object-cover rounded-lg transition duration-300">
+                    <p class="text-center mt-2 text-gray-700 font-medium">Moderator Non-Formal</p>
+                </div>
+                <div class="gallery-card bg-gray-100 p-4 rounded-xl shadow-md overflow-hidden fade-in" style="animation-delay: 0.1s">
+                    <img src="pj.jpg" alt="Activity 2" class="w-full h-48 object-cover rounded-lg transition duration-300">
+                    <p class="text-center mt-2 text-gray-700 font-medium">Penanggung jawab Mahasiswa Baru</p>
+                </div>
+                <div class="gallery-card bg-gray-100 p-4 rounded-xl shadow-md overflow-hidden fade-in" style="animation-delay: 0.1s">
+                    <img src="moderator_w.jpg" alt="Activity 2" class="w-full h-48 object-cover rounded-lg transition duration-300">
+                    <p class="text-center mt-2 text-gray-700 font-medium">Moderator Workshop Tema Kepemimpinan</p>
+                </div>
+                <div class="gallery-card bg-gray-100 p-4 rounded-xl shadow-md overflow-hidden fade-in" style="animation-delay: 0.4s">
+                    <img src="moderator_w2.jpg" alt="Activity 5" class="w-full h-48 object-cover rounded-lg transition duration-300">
+                    <p class="text-center mt-2 text-gray-700 font-medium">Moderator</p>
+                </div>
+                <div class="gallery-card bg-gray-100 p-4 rounded-xl shadow-md overflow-hidden fade-in" style="animation-delay: 0.5s">
+                    <img src="sosialisasi.jpg" alt="Activity 6" class="w-full h-48 object-cover rounded-lg transition duration-300">
+                    <p class="text-center mt-2 text-gray-700 font-medium">Sosialisasi ke Sekolah</p>
+                </div>
+                <div class="gallery-card bg-gray-100 p-4 rounded-xl shadow-md overflow-hidden fade-in" style="animation-delay: 0.5s">
+                    <img src="maba.jpg" alt="Activity 6" class="w-full h-48 object-cover rounded-lg transition duration-300">
+                    <p class="text-center mt-2 text-gray-700 font-medium">Pengenalan Kampus ke Mahasiswa Baru</p>
+                </div>
+                <div class="gallery-card bg-gray-100 p-4 rounded-xl shadow-md overflow-hidden fade-in" style="animation-delay: 0.5s">
+                    <img src="bky.jpg" alt="Activity 6" class="w-full h-48 object-cover rounded-lg transition duration-300">
+                    <p class="text-center mt-2 text-gray-700 font-medium">Menjadi Pengarah Massa di Acara Kunjungan Kampus</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 text-gray-800">Contact Me</h2>
+            <p class="text-lg mb-6 text-gray-600">Interested in working together? Don't hesitate to contact me!</p>
+            <div class="flex justify-center space-x-6">
+                <a href="mailto:mrndaaa10@gmail.com" class="text-blue-700 hover:text-yellow-500 transition duration-300">Email: mrndaaa10@gmail.com</a>
+                <a href="tel:+6289509131976" class="text-blue-700 hover:text-yellow-500 transition duration-300">Phone: 089509131976</a>
+            </div>
+            <p class="text-lg mt-4 text-gray-600">Sambas, Kalimantan Barat, Indonesia</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-blue-700 to-blue-500 text-white p-6 text-center">
+        <p>© 2025 Miranda. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add fade-in effect to gallery items on load
+        window.addEventListener('load', () => {
+            const galleryCards = document.querySelectorAll('.gallery-card');
+            galleryCards.forEach(card => card.classList.add('fade-in'));
+        });
+    </script>
+</body>
+</html>
